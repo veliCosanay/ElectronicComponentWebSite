@@ -58,7 +58,7 @@
                             <h5 class="font-weight-bold">Total</h5>
                             <h5 class="font-weight-bold">$<asp:Label ID="lblTotal" runat="server" /></h5>
                         </div>
-                        <asp:Button ID="btnPayNow" runat="server" Text="Pay Now" 
+                        <asp:Button ID="btnPayNow" runat="server" Text="Order Now" 
                             CssClass="btn btn-lg btn-block btn-primary font-weight-bold my-3 py-3"
                             OnClick="btnPayNow_Click" />
                     </div>

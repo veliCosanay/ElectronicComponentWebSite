@@ -38,7 +38,6 @@ namespace KomponenetService.Admin
                         string query = @"SELECT * FROM User_Crud(@c_Action::text, @c_UserId::integer, @c_Name::varchar, 
                             @c_Mobile::varchar, @c_Email::varchar, @c_Address::text, @c_Password::varchar, 
                             @c_ImageUrl::text, @c_RoleId::integer) WHERE out_roleid != 1";
-
                         cmd = new NpgsqlCommand(query, con);
                         cmd.Parameters.AddWithValue("c_Action", "GETALL");
                         cmd.Parameters.AddWithValue("c_UserId", DBNull.Value);
@@ -55,8 +54,7 @@ namespace KomponenetService.Admin
                         string query = @"SELECT * FROM User_Crud(@c_Action::text, @c_UserId::integer, @c_Name::varchar, 
                             @c_Mobile::varchar, @c_Email::varchar, @c_Address::text, @c_Password::varchar, 
                             @c_ImageUrl::text, @c_RoleId::integer) 
-                            WHERE out_roleid != 1 AND LOWER(out_name) LIKE LOWER(@SearchQuery)";
-
+                            WHERE out_roleid != 1 AND out_name ILIKE @SearchQuery";
                         cmd = new NpgsqlCommand(query, con);
                         cmd.Parameters.AddWithValue("c_Action", "GETALL");
                         cmd.Parameters.AddWithValue("c_UserId", DBNull.Value);
@@ -67,7 +65,7 @@ namespace KomponenetService.Admin
                         cmd.Parameters.AddWithValue("c_Password", DBNull.Value);
                         cmd.Parameters.AddWithValue("c_ImageUrl", DBNull.Value);
                         cmd.Parameters.AddWithValue("c_RoleId", DBNull.Value);
-                        cmd.Parameters.AddWithValue("@SearchQuery", "%" + searchQuery + "%");
+                        cmd.Parameters.AddWithValue("SearchQuery", "%" + searchQuery + "%");
                     }
 
                     using (sda = new NpgsqlDataAdapter(cmd))
@@ -88,6 +86,37 @@ namespace KomponenetService.Admin
             {
                 ShowMessage("Error loading users: " + ex.Message, "alert alert-danger");
             }
+        }
+
+        protected DataTable GetOrderHistory(int userId)
+        {
+            DataTable dtOrders = new DataTable();
+            try
+            {
+                using (NpgsqlConnection conn = new NpgsqlConnection(Utils.getConnection()))
+                {
+                    conn.Open();
+                    string query = @"SELECT paymentid, orderdetails, amount, paymentmode, paymentstatus, 
+                                          address, createddate 
+                                   FROM payment 
+                                   WHERE userid = @userid 
+                                   ORDER BY createddate DESC";
+
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("userid", userId);
+                        using (NpgsqlDataAdapter sda = new NpgsqlDataAdapter(cmd))
+                        {
+                            sda.Fill(dtOrders);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                ShowMessage("Error loading order history: " + ex.Message, "alert alert-danger");
+            }
+            return dtOrders;
         }
 
         protected void btnAddOrUpdate_Click(object sender, EventArgs e)
@@ -138,16 +167,8 @@ namespace KomponenetService.Admin
                     cmd.Parameters.AddWithValue("c_Email", txtEmail.Text.Trim());
                     cmd.Parameters.AddWithValue("c_Address", txtAddress.Text.Trim());
                     cmd.Parameters.AddWithValue("c_Password", txtPassword.Text.Trim());
+                    cmd.Parameters.AddWithValue("c_ImageUrl", hasNewImage ? (object)imagePath : DBNull.Value);
                     cmd.Parameters.AddWithValue("c_RoleId", 2); // Normal user role
-
-                    if (hasNewImage)
-                    {
-                        cmd.Parameters.AddWithValue("c_ImageUrl", imagePath);
-                    }
-                    else
-                    {
-                        cmd.Parameters.AddWithValue("c_ImageUrl", DBNull.Value);
-                    }
 
                     using (var reader = cmd.ExecuteReader())
                     {

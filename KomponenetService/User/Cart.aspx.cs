@@ -3,6 +3,8 @@ using System.Data;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Npgsql;
+using System.Web.Services;
+using System.Web;
 
 namespace KomponenetService.User
 {
@@ -105,74 +107,85 @@ namespace KomponenetService.User
             }
         }
 
-        protected void btnUpdateCart_Click(object sender, EventArgs e)
+        protected void lbCheckout_Click(object sender, EventArgs e)
         {
-            bool success = true;
-            string errorMessage = "";
+            Response.Redirect("Payment.aspx");
+        }
 
+        [WebMethod]
+        public static object GetCartSummary()
+        {
+            decimal subTotal = 0;
+            decimal shipping = 50.00M; // Sabit kargo ücreti
+
+            using (NpgsqlConnection conn = new NpgsqlConnection(Utils.getConnection()))
+            {
+                conn.Open();
+                string query = @"SELECT SUM(p.price * c.quantity) as total
+                               FROM cart c
+                               JOIN product p ON c.productid = p.productid
+                               WHERE c.userid = @userid";
+                
+                using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("userid", Convert.ToInt32(HttpContext.Current.Session["userId"]));
+                    object result = cmd.ExecuteScalar();
+                    if (result != DBNull.Value && result != null)
+                    {
+                        subTotal = Convert.ToDecimal(result);
+                    }
+                }
+            }
+
+            return new { 
+                subTotal = subTotal, 
+                shipping = shipping, 
+                total = subTotal + shipping 
+            };
+        }
+
+        [WebMethod]
+        public static void UpdateCartQuantity(int productId, int quantity)
+        {
+            using (NpgsqlConnection conn = new NpgsqlConnection(Utils.getConnection()))
+            {
+                conn.Open();
+                string query = @"UPDATE cart 
+                               SET quantity = @quantity 
+                               WHERE userid = @userid AND productid = @productid";
+                
+                using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("quantity", quantity);
+                    cmd.Parameters.AddWithValue("userid", Convert.ToInt32(HttpContext.Current.Session["userId"]));
+                    cmd.Parameters.AddWithValue("productid", productId);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
+        [WebMethod]
+        public static object RemoveFromCart(int productId)
+        {
             try
             {
                 using (NpgsqlConnection conn = new NpgsqlConnection(Utils.getConnection()))
                 {
                     conn.Open();
-                    foreach (RepeaterItem item in rCartItems.Items)
+                    string query = "DELETE FROM cart WHERE userid = @userid AND productid = @productid";
+                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
                     {
-                        if (item.ItemType == ListItemType.Item || item.ItemType == ListItemType.AlternatingItem)
-                        {
-                            TextBox txtQuantity = (TextBox)item.FindControl("txtQuantity");
-                            if (txtQuantity != null)
-                            {
-                                int productId = Convert.ToInt32(txtQuantity.Attributes["CommandArgument"]);
-                                int quantity;
-                                if (int.TryParse(txtQuantity.Text, out quantity) && quantity > 0)
-                                {
-                                    string query = "UPDATE cart SET quantity = @quantity WHERE userid = @userid AND productid = @productid";
-                                    using (NpgsqlCommand cmd = new NpgsqlCommand(query, conn))
-                                    {
-                                        cmd.Parameters.AddWithValue("quantity", quantity);
-                                        cmd.Parameters.AddWithValue("userid", Convert.ToInt32(Session["userId"]));
-                                        cmd.Parameters.AddWithValue("productid", productId);
-                                        cmd.ExecuteNonQuery();
-                                    }
-                                }
-                                else
-                                {
-                                    success = false;
-                                    errorMessage = "Miktar geçerli bir sayı olmalıdır ve 0'dan büyük olmalıdır.";
-                                    break;
-                                }
-                            }
-                        }
+                        cmd.Parameters.AddWithValue("userid", Convert.ToInt32(HttpContext.Current.Session["userId"]));
+                        cmd.Parameters.AddWithValue("productid", productId);
+                        cmd.ExecuteNonQuery();
                     }
                 }
-
-                if (success)
-                {
-                    GetCartItems();
-                    ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage", 
-                        "alert('Sepet başarıyla güncellendi.');", true);
-                }
-                else
-                {
-                    ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage", 
-                        "alert('" + errorMessage.Replace("'", "\\'") + "');", true);
-                }
-            }
-            catch (PostgresException pgEx)
-            {
-                ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage", 
-                    "alert('PostgreSQL Hatası: " + pgEx.MessageText.Replace("'", "\\'") + "');", true);
+                return new { success = true };
             }
             catch (Exception ex)
             {
-                ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage", 
-                    "alert('Sepet güncellenirken hata oluştu: " + ex.Message.Replace("'", "\\'") + "');", true);
+                return new { success = false, message = ex.Message };
             }
-        }
-
-        protected void lbCheckout_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Payment.aspx");
         }
     }
 } 

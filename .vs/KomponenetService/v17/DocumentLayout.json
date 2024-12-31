@@ -1,0 +1,177 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|e:\\okul\\veri taban\u0131\\proje\\electroniccomponentwebsite\\komponenetservice\\admin\\users.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|solutionrelative:komponenetservice\\admin\\users.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|e:\\okul\\veri taban\u0131\\proje\\electroniccomponentwebsite\\komponenetservice\\admin\\users.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|solutionrelative:komponenetservice\\admin\\users.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|e:\\okul\\veri taban\u0131\\proje\\electroniccomponentwebsite\\komponenetservice\\user\\user.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|solutionrelative:komponenetservice\\user\\user.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|e:\\okul\\veri taban\u0131\\proje\\electroniccomponentwebsite\\komponenetservice\\user\\payment.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|solutionrelative:komponenetservice\\user\\payment.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|e:\\okul\\veri taban\u0131\\proje\\electroniccomponentwebsite\\komponenetservice\\user\\payment.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|solutionrelative:komponenetservice\\user\\payment.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|e:\\okul\\veri taban\u0131\\proje\\electroniccomponentwebsite\\komponenetservice\\user\\cart.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|solutionrelative:komponenetservice\\user\\cart.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|e:\\okul\\veri taban\u0131\\proje\\electroniccomponentwebsite\\komponenetservice\\user\\cart.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|solutionrelative:komponenetservice\\user\\cart.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|e:\\okul\\veri taban\u0131\\proje\\electroniccomponentwebsite\\komponenetservice\\user\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|solutionrelative:komponenetservice\\user\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\komponenetservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FBE0EFEC-040B-4126-9159-5B5BA2CE0B70}|KomponenetService\\KomponenetService.csproj|solutionrelative:komponenetservice\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 213,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.Master",
+              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\User\\User.Master",
+              "RelativeDocumentMoniker": "KomponenetService\\User\\User.Master",
+              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\User\\User.Master",
+              "RelativeToolTip": "KomponenetService\\User\\User.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-31T11:25:03.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Payment.aspx",
+              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\User\\Payment.aspx",
+              "RelativeDocumentMoniker": "KomponenetService\\User\\Payment.aspx",
+              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\User\\Payment.aspx",
+              "RelativeToolTip": "KomponenetService\\User\\Payment.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-31T11:30:10.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Payment.aspx.cs",
+              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\User\\Payment.aspx.cs",
+              "RelativeDocumentMoniker": "KomponenetService\\User\\Payment.aspx.cs",
+              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\User\\Payment.aspx.cs",
+              "RelativeToolTip": "KomponenetService\\User\\Payment.aspx.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAgwMEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T11:30:01.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cart.aspx",
+              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\User\\Cart.aspx",
+              "RelativeDocumentMoniker": "KomponenetService\\User\\Cart.aspx",
+              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\User\\Cart.aspx",
+              "RelativeToolTip": "KomponenetService\\User\\Cart.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-31T11:25:12.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cart.aspx.cs",
+              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\User\\Cart.aspx.cs",
+              "RelativeDocumentMoniker": "KomponenetService\\User\\Cart.aspx.cs",
+              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\User\\Cart.aspx.cs",
+              "RelativeToolTip": "KomponenetService\\User\\Cart.aspx.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwAAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T11:18:37.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Users.aspx.cs",
+              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\Admin\\Users.aspx.cs",
+              "RelativeDocumentMoniker": "KomponenetService\\Admin\\Users.aspx.cs",
+              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\Admin\\Users.aspx.cs",
+              "RelativeToolTip": "KomponenetService\\Admin\\Users.aspx.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAIAwwPQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T11:03:53.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Users.aspx",
+              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\Admin\\Users.aspx",
+              "RelativeDocumentMoniker": "KomponenetService\\Admin\\Users.aspx",
+              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\Admin\\Users.aspx",
+              "RelativeToolTip": "KomponenetService\\Admin\\Users.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-31T11:02:50.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\Web.config",
+              "RelativeDocumentMoniker": "KomponenetService\\Web.config",
+              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\Web.config",
+              "RelativeToolTip": "KomponenetService\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-12-31T10:24:13.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\User\\Default.aspx",
+              "RelativeDocumentMoniker": "KomponenetService\\User\\Default.aspx",
+              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\User\\Default.aspx",
+              "RelativeToolTip": "KomponenetService\\User\\Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-12-31T10:24:10.222Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

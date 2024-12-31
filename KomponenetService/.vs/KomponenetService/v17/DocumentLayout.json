@@ -1,34 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\",
+  "WorkspaceRootPath": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Users.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Admin\\Users.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Users.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Admin\\Users.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Admin.Master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Admin\\Admin.Master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Admin.Master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Admin\\Admin.Master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Categories.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Admin\\Categories.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Categories.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Admin\\Categories.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Admin\\Dashboard.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\User\\Default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:User\\Default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 213,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,93 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Categories.aspx.cs",
-              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Categories.aspx.cs",
-              "RelativeDocumentMoniker": "Admin\\Categories.aspx.cs",
-              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Categories.aspx.cs",
-              "RelativeToolTip": "Admin\\Categories.aspx.cs",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T00:13:10.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Categories.aspx",
-              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Categories.aspx",
-              "RelativeDocumentMoniker": "Admin\\Categories.aspx",
-              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Categories.aspx",
-              "RelativeToolTip": "Admin\\Categories.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-12-29T00:13:09.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Admin.Master.cs",
-              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Admin.Master.cs",
-              "RelativeDocumentMoniker": "Admin\\Admin.Master.cs",
-              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Admin.Master.cs",
-              "RelativeToolTip": "Admin\\Admin.Master.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T00:13:07.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Admin.Master",
-              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Admin.Master",
-              "RelativeDocumentMoniker": "Admin\\Admin.Master",
-              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Admin.Master",
-              "RelativeToolTip": "Admin\\Admin.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-12-29T00:13:03.743Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Users.aspx.cs",
-              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Users.aspx.cs",
-              "RelativeDocumentMoniker": "Admin\\Users.aspx.cs",
-              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Users.aspx.cs",
-              "RelativeToolTip": "Admin\\Users.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T00:12:35.269Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Users.aspx",
-              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Users.aspx",
-              "RelativeDocumentMoniker": "Admin\\Users.aspx",
-              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Users.aspx",
-              "RelativeToolTip": "Admin\\Users.aspx",
+              "Title": "Default.aspx",
+              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\User\\Default.aspx",
+              "RelativeDocumentMoniker": "User\\Default.aspx",
+              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\ElectronicComponentWebSite\\KomponenetService\\User\\Default.aspx",
+              "RelativeToolTip": "User\\Default.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-12-29T00:12:33.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Dashboard.aspx",
-              "DocumentMoniker": "E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Dashboard.aspx",
-              "RelativeDocumentMoniker": "Admin\\Dashboard.aspx",
-              "ToolTip": "E:\\okul\\veri taban\u0131\\proje\\deneme\\KomponenetService\\KomponenetService\\Admin\\Dashboard.aspx",
-              "RelativeToolTip": "Admin\\Dashboard.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-12-29T00:12:13.548Z",
+              "WhenOpened": "2024-12-31T10:11:30.727Z",
               "EditorCaption": ""
             }
           ]

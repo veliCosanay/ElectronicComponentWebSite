@@ -141,6 +141,45 @@
                                                 CausesValidation="false">
                                                 <i class="fa fa-trash"></i>
                                             </asp:LinkButton>
+                                            <button type="button" class="btn btn-sm btn-primary" onclick="toggleOrders('<%# Eval("out_userid") %>')">
+                                                <i class="fa fa-history"></i> Orders
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="6">
+                                            <div id="orderHistory_<%# Eval("out_userid") %>" style="display: none;">
+                                                <asp:Repeater ID="rOrders" runat="server" DataSource='<%# GetOrderHistory(Convert.ToInt32(Eval("out_userid"))) %>'>
+                                                    <HeaderTemplate>
+                                                        <table class="table table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Order Date</th>
+                                                                    <th>Order Details</th>
+                                                                    <th>Amount</th>
+                                                                    <th>Payment Mode</th>
+                                                                    <th>Status</th>
+                                                                    <th>Shipping Address</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                    </HeaderTemplate>
+                                                    <ItemTemplate>
+                                                        <tr>
+                                                            <td><%# Convert.ToDateTime(Eval("createddate")).ToString("dd/MM/yyyy HH:mm") %></td>
+                                                            <td><%# Eval("orderdetails") %></td>
+                                                            <td>$<%# Eval("amount") %></td>
+                                                            <td><%# Eval("paymentmode") %></td>
+                                                            <td><%# Eval("paymentstatus") %></td>
+                                                            <td><%# Eval("address") %></td>
+                                                        </tr>
+                                                    </ItemTemplate>
+                                                    <FooterTemplate>
+                                                            </tbody>
+                                                        </table>
+                                                    </FooterTemplate>
+                                                </asp:Repeater>
+                                            </div>
                                         </td>
                                     </tr>
                                 </ItemTemplate>

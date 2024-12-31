@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Admin"
+    "\\User"
   ],
-  "SelectedNode": "\\KomponenetService.csproj",
+  "SelectedNode": "\\User\\Default.aspx",
   "PreviewInSolutionExplorer": false
 }

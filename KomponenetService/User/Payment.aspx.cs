@@ -59,7 +59,7 @@ namespace KomponenetService.User
             }
             catch (Exception ex)
             {
-                ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage", 
+                ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage",
                     "alert('Error loading cart total: " + ex.Message.Replace("'", "\\'") + "');", true);
             }
         }
@@ -69,11 +69,11 @@ namespace KomponenetService.User
             try
             {
                 // Basic validations
-                if (string.IsNullOrEmpty(txtName.Text) || string.IsNullOrEmpty(txtCardNo.Text) || 
-                    string.IsNullOrEmpty(txtExpiryDate.Text) || string.IsNullOrEmpty(txtCvv.Text) || 
+                if (string.IsNullOrEmpty(txtName.Text) || string.IsNullOrEmpty(txtCardNo.Text) ||
+                    string.IsNullOrEmpty(txtExpiryDate.Text) || string.IsNullOrEmpty(txtCvv.Text) ||
                     string.IsNullOrEmpty(txtAddress.Text))
                 {
-                    ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage", 
+                    ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage",
                         "alert('Please fill all required fields.');", true);
                     return;
                 }
@@ -82,7 +82,7 @@ namespace KomponenetService.User
                 string cardNo = txtCardNo.Text.Trim();
                 if (cardNo.Length != 16 || !cardNo.All(c => char.IsDigit(c)))
                 {
-                    ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage", 
+                    ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage",
                         "alert('Please enter a valid 16-digit card number.');", true);
                     return;
                 }
@@ -90,7 +90,7 @@ namespace KomponenetService.User
                 // Validate expiry date format (MM/YY)
                 if (!txtExpiryDate.Text.Contains("/") || txtExpiryDate.Text.Length != 5)
                 {
-                    ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage", 
+                    ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage",
                         "alert('Please enter expiry date in MM/YY format.');", true);
                     return;
                 }
@@ -99,7 +99,7 @@ namespace KomponenetService.User
                 int cvv;
                 if (!int.TryParse(txtCvv.Text, out cvv) || txtCvv.Text.Length != 3)
                 {
-                    ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage", 
+                    ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage",
                         "alert('Please enter a valid 3-digit CVV number.');", true);
                     return;
                 }
@@ -116,7 +116,7 @@ namespace KomponenetService.User
                                                FROM cart c 
                                                INNER JOIN product p ON c.productid = p.productid 
                                                WHERE c.userid = @userid";
-                            
+
                             string orderDetails = "";
                             using (NpgsqlCommand cartCmd = new NpgsqlCommand(cartQuery, conn))
                             {
@@ -130,7 +130,7 @@ namespace KomponenetService.User
                                     }
                                 }
                             }
-                            
+
                             if (orderDetails.Length > 2)
                             {
                                 orderDetails = orderDetails.Substring(0, orderDetails.Length - 2);
@@ -186,9 +186,9 @@ namespace KomponenetService.User
             }
             catch (Exception ex)
             {
-                ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage", 
+                ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage",
                     "alert('Error processing payment: " + ex.Message.Replace("'", "\\'") + "');", true);
             }
         }
     }
-} 
+}

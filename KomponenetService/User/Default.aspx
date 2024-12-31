@@ -41,7 +41,7 @@
             <h2 class="section-title px-5"><span class="px-2">Featured Products</span></h2>
         </div>
         <div class="row px-xl-5 pb-3">
-            <asp:Repeater ID="rProducts" runat="server">
+            <asp:Repeater ID="rProducts" runat="server" OnItemCommand="rProducts_ItemCommand">
                 <ItemTemplate>
                     <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
                         <div class="card product-item border-0 mb-4">
@@ -58,9 +58,10 @@
                                 <a href='ProductDetails.aspx?id=<%# Eval("ProductId") %>' class="btn btn-sm text-dark p-0">
                                     <i class="fas fa-eye text-primary mr-1"></i>View Detail
                                 </a>
-                                <a href='Cart.aspx?productId=<%# Eval("ProductId") %>' class="btn btn-sm text-dark p-0">
+                                <asp:LinkButton ID="lbAddToCart" runat="server" CssClass="btn btn-sm text-dark p-0"
+                                    CommandName="addToCart" CommandArgument='<%# Eval("ProductId") %>'>
                                     <i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart
-                                </a>
+                                </asp:LinkButton>
                             </div>
                         </div>
                     </div>
